@@ -16,6 +16,7 @@ public class RemoteProfileRepository implements ProfileRepository {
 	public RemoteProfileRepository(String serviceUrl) {
 		this.serviceUrl = serviceUrl.startsWith("http") ? serviceUrl
 				: "http://" + serviceUrl;
+		System.out.println("service url= "+this.serviceUrl);
 	}
 	
 	@Override
